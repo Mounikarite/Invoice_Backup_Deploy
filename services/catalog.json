@@ -1,0 +1,35 @@
+{
+    "backends": {
+        "ics": {
+            "serviceType": "ics",
+            "description": "casey.brown",
+            "servers": [
+                {
+                    "url": "vb-catalog://backends.tenant/ics",
+                    "description": "Overridden Integration Server",
+                    "x-vb": {
+                        "authentication": {
+                            "authenticated": {
+                                "type": "basic",
+                                "credentials": "vb_ba9d513f-c0ea-4cc1-b870-94337e6ee9b9"
+                            },
+                            "anonymous": {
+                                "type": "basic",
+                                "credentials": "vb_db8d0927-07ca-44e4-a72b-b294746f55ed"
+                            }
+                        },
+                        "anonymousAccess": true
+                    }
+                }
+            ]
+        },
+        "Databridge_Oracle_Invoice_Backup": {
+            "servers": [
+                {
+                    "url": "https://databridge.rite.digital",
+                    "description": "Databridge Rite Digital"
+                }
+            ]
+        }
+      }
+}
